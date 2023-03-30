@@ -5,13 +5,16 @@
 </title>
 </head>
 <body>
-<h1> Homepage </h1>
-<?php echo Asset::img("IMG_0196.JPG")?>
-<h2> Biography </h2>
-<ul>
-<li> My name is Jaimuel Silva but you can also call me James! </li>
-<li> I love working on cars and also watching sports! </li>
-<li> Currently I am at CSU studying computer Science! </li>
-</ul>   
+<h1> Table </h1>
+<?php echo Form::open(['action' => 'milestone/rowfunction', 'method' => 'post']); ?>
+<?php echo Form::label('Enter Row Value: ', 'row_value'); ?>
+<?php echo Form::input('rowvalue'); ?>
+<?php echo Form::submit('submit', 'Submit'); ?>
+<?php echo Form::close(); ?>
+<?php echo Form::open(['action' => 'milestone/colorfunction', 'method' => 'post']); ?>
+<?php echo Form::label('Enter Color Value: ', 'color_value'); ?>
+<?php echo Form::input('colorvalue'); ?>
+<?php echo Form::submit('submit', 'Submit'); ?>
+<?php echo Form::close(); ?>
 </body>
 </html>
