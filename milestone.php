@@ -15,6 +15,17 @@ class Controller_milestone extends Controller_Template
 	public $direction = "";
 	public $direction2 = "";
 	public $direction3 = "";
+	public function post_rowfunction()
+   {
+       $rowvalue = Input::post('myvalue');
+	   //do something
+   }
+
+   public function post_colorfunction()
+   {
+       $colorvalue = Input::post('myvalue');
+	   //do something
+   }
 	/**
 	 * The basic welcome message
 	 *
@@ -45,27 +56,18 @@ class Controller_milestone extends Controller_Template
 
 	}
 
-	public function action_two(){
-		$dir = Input::get('direction');	
+	public function action_two()
+	{
+		$dir = Input::get('direction');
 		$data = array();
-		if($dir == "east"){
-			$this->template->title = 'East Page Title';
-			$this->template->css = "west.css";
-			$this->template->content = View::forge('milestone1/table',$data);
-			$this->template->direction = "?direction=east";
-			$this->template->direction2 = "?direction=east";
-			$this->template->direction3 = "?direction=east";
-			}
-			elseif ($dir == "west"){
-			$this->template->title = 'West Page Title';
-			$this->template->css = "west.css";
-			$this->template->content = View::forge('eastwest/two',$data);
-			$this->template->direction = "?direction=west";
-			$this->template->direction2 = "?direction=west";
-			$this->template->direction3 = "?direction=west";
-			}
-
+		$this->template->title = 'East Page Title';
+		$this->template->css = "west.css";
+		$this->template->content = View::forge('milestone1/table',$data);
+		$this->template->direction = "?direction=east";
+		$this->template->direction2 = "?direction=east";
+		$this->template->direction3 = "?direction=east";
 	}
+
 
 	/**
 	 * The 404 action for the application.
