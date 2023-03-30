@@ -26,33 +26,22 @@ class Controller_milestone extends Controller_Template
 		$dir = Input::get('direction');
 		$data = array();
 		$this->template->title = 'East Page Title';
-		$this->template->css = "east.css";
+		$this->template->css = "west.css";
 		$this->template->content = View::forge('milestone1/index',$data);
 		$this->template->direction = "?direction=east";
 		$this->template->direction2 = "?direction=east";
 		$this->template->direction3 = "?direction=east";
-
 	}
 
 	public function action_one(){
-		$data = array();
 		$dir = Input::get('direction');
-		if($dir == "east"){
+		$data = array();
 		$this->template->title = 'East Page Title';
-		$this->template->css = "east.css";
-		$this->template->content = View::forge('eastwest/one',$data);
+		$this->template->css = "aboutpage.css";
+		$this->template->content = View::forge('milestone1/about',$data);
 		$this->template->direction = "?direction=east";
 		$this->template->direction2 = "?direction=east";
 		$this->template->direction3 = "?direction=east";
-		}
-		elseif($dir == "west"){
-		$this->template->title = 'West Page Title';
-		$this->template->css = "west.css";
-		$this->template->content = View::forge('eastwest/one',$data);
-		$this->template->direction = "?direction=west";
-		$this->template->direction2 = "?direction=west";
-		$this->template->direction3 = "?direction=west";
-		}
 
 	}
 
@@ -61,8 +50,8 @@ class Controller_milestone extends Controller_Template
 		$data = array();
 		if($dir == "east"){
 			$this->template->title = 'East Page Title';
-			$this->template->css = "east.css";
-			$this->template->content = View::forge('eastwest/two',$data);
+			$this->template->css = "west.css";
+			$this->template->content = View::forge('milestone1/table',$data);
 			$this->template->direction = "?direction=east";
 			$this->template->direction2 = "?direction=east";
 			$this->template->direction3 = "?direction=east";
