@@ -1,3 +1,7 @@
+<meta charset="UTF-8">
+  <meta name="credit from W3schools about cards." content="About Page">
+  <meta name="keywords" content="HTML, CSS,">
+  <meta name="author" content="Jaimuel Silva">
 <body>
 <h2>About Page</h2>
 <div class = "row">
@@ -15,7 +19,7 @@
             <?php echo Asset::img('Austin-Picture.JPG', array('style' => 'width:100%')) ?>
             <div class="container">
                 <h4><b>Austin Persichetti</b></h4> 
-                <p>My name is Austin Persichetti, I am a third year Colorado State University student studying Computer Science with a minor in Business Administration. My main goals are to better myself and learn the most I can to prepare for my future careeer.<p> 
+                <p>My name is Austin Persichetti, I am a third year Colorado State University student studying Computer Science with a minor in Business Administration. My main goals are to better myself and learn the most I can to prepare for my future career.</p> 
             </div>
         </div>
     </div>
