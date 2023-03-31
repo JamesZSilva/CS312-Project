@@ -17,3 +17,27 @@
     margin-bottom: 16px;
     padding: 0 8px;
   }
+
+  body{
+    background-color: #29524A;
+    font-family: Arial, Helvetica, serif; 
+    color:#F7F7F2;
+    width:90%;
+    min-width: 600px;
+    }
+    .nav{
+        text-align: center;
+    }
+    .nav a{
+        text-decoration: none;
+        color:white;
+        padding:10px;
+        background-color: #102542;
+    }
+    .nav a:hover{
+        background-color: black;
+    }
+    .footer{
+        Left:0;
+        Right:0;
+    }
