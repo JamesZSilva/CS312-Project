@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="My Homepage">
 <meta name="keywords" content="HTML, CSS, JavaScript">
-<meta name="author" content="Jaimuel Silva">
+<meta name="author" content="Austin Persichetti">
 <?php echo Asset::css($css)?>
 <?php 
             $url = Uri::current();
