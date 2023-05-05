@@ -33,7 +33,7 @@ class Controller_milestone extends Controller_Template
 	public function action_about(){
 		$data = array();
 		$this->template->title = 'About Page Title';
-		$this->template->css = "aboutpage.css";
+		$this->template->css = "m1.css";
 		$this->template->content = View::forge('milestone/about',$data);
 
 	}
@@ -102,7 +102,9 @@ class Controller_milestone extends Controller_Template
                 $color_table .= '<option value="' . $c['hex_value'] . '" ' . $selected . '>' . ucfirst($c['name']) . '</option>';
             }
             $color_table .= '</select></td>';
-            $color_table .= '<td id="' . $currId . '" class="' . $currId . '" style="border: 1px solid black; width: 80%; background-color:' . $color['hex_value'] . ';">&nbsp;</td>';
+            $color_table .= '<td id="' . $currId . '" class="' . $currId . '" style="border: 1px solid black; width: 80%; background-color:' . $color['hex_value'] . ';">';
+            $color_table .= '<div style="text-align: center; float: left; width: 20%;">Click Here</div>';
+            $color_table .= '</td>';
             $color_table .= '</tr>';
         }
         $color_table .= '</table>';
@@ -239,6 +241,7 @@ class Controller_milestone extends Controller_Template
     echo '<div style="text-align:center;">'.$normal_table.'</div>';
     echo "<br></br>";
     echo '<div style="text-align:center;"><button onclick="display()">Click to Print</button></div>';
+    echo "<br></br>";
     }
     $this->template->content = View::forge('milestone/rowfunction', $data);
 }
