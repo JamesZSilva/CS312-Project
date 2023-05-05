@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1> Table </h1>
-    <?php echo Form::open(['action' => 'https://cs.colostate.edu:4444/~sketti/m1/fuelviews/index.php/milestone/rowfunction', 'method' => 'post']); ?>
+    <?php echo Form::open(['action' => 'https://cs.colostate.edu:4444/~glemicnt/m1/fuelviews/index.php/milestone/rowfunction', 'method' => 'post']); ?>
         <?php echo Form::label('Enter Row Value: ', 'row_value'); ?>
         <?php echo Form::input('rowvalue'); ?>
         <br><br>
@@ -20,3 +20,4 @@
     <?php endif; ?>
 </body>
 </html>
+
