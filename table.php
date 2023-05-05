@@ -15,17 +15,6 @@
     <?php echo Form::submit('submit', 'Submit'); ?>
     <?php echo Form::close(); ?>
 
-    <h1> Add a Color to the Database </h1>
-    <?php echo Form::open(['action' => 'https://cs.colostate.edu:4444/~sketti/m1/fuelviews/index.php/milestone/addcolor', 'method' => 'post']); ?>
-    <?php echo Form::label('Enter Color Name: ', 'color_name'); ?>
-    <?php echo Form::input('color_name'); ?>
-    <br><br>
-    <?php echo Form::label('Enter Color hex: ', 'color_hex'); ?>
-    <?php echo Form::input('color_hex'); ?>
-    <br><br>
-    <?php echo Form::submit('submit', 'Submit'); ?>
-    <?php echo Form::close(); ?>
-
     <?php if (isset($table)): ?>
         <?php echo $table; ?>
     <?php endif; ?>
